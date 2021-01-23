@@ -1,0 +1,8 @@
+<p *ngIf="missions==undefined">Loading</p>
+<ul>
+  <li *ngFor="let mission of missions">
+    Mission <b>{{mission.mission_name}}</b> with rocket  {{mission.rocket.rocket_name}} {{mission.rocket.rocket_type}}
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
