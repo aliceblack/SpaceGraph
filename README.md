@@ -4,15 +4,15 @@ An app that uses GraphQL to elaborate SpaceX APIs.
 
 ## Space X
 > https://docs.spacexdata.com/
+ 
 
 ## GraphQL
 > https://graphql.org/
 
-### Express
-> https://graphql.org/graphql-js/running-an-express-graphql-server/
+Make a decision between Express and Apollo:
 
-### Apollo
-> https://graphql.org/code/#javascript
+* Express https://graphql.org/graphql-js/running-an-express-graphql-server/
+* Apollo https://graphql.org/code/#javascript
 
 ## Data
 
