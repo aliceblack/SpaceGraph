@@ -1,8 +1,12 @@
 <p *ngIf="missions==undefined">Loading</p>
-<ul>
-  <li *ngFor="let mission of missions">
-    Mission <b>{{mission.mission_name}}</b> with rocket  {{mission.rocket.rocket_name}} {{mission.rocket.rocket_type}}
-  </li>
-</ul>
+
+  <div *ngFor="let mission of missions">
+    <img [src]=mission.links.mission_patch height="150">
+    <p>Mission {{mission.mission_name}}</p> 
+    <p>Rocket {{mission.rocket.rocket_name}} {{mission.rocket.rocket_type}}</p>
+    <p>{{mission.launch_date_utc}}</p> 
+    <p>{{mission.details}}</p> 
+  </div>
+
 
 <router-outlet></router-outlet>
