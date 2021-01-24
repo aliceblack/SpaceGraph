@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    border-radius: 50%;
+}
+
+.mission-item{
+    margin: auto;
+    margin-top: 7em;
+    max-width: 50%;
+}
+

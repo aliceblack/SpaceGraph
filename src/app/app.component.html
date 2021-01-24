@@ -1,12 +1,15 @@
+<img class="logo" src="/assets/spaceman.gif" height="70" loading="lazy">
+
+
 <p *ngIf="missions==undefined">Loading</p>
 
-  <div *ngFor="let mission of missions">
-    <img [src]=mission.links.mission_patch height="150">
-    <p>Mission {{mission.mission_name}}</p> 
-    <p>Rocket {{mission.rocket.rocket_name}} {{mission.rocket.rocket_type}}</p>
-    <p>{{mission.launch_date_utc}}</p> 
-    <p>{{mission.details}}</p> 
-  </div>
+<div *ngFor="let mission of missions" class="mission-item">
+  <img [src]=mission.links.mission_patch height="70" loading="lazy">
+  <p><b>Mission {{mission.mission_name}}</b></p> 
+  <p>Rocket {{mission.rocket.rocket_name}} {{mission.rocket.rocket_type}}</p>
+  <p>{{mission.launch_date_utc | date:'yyyy-MM-dd hh:mm'}}</p> 
+  <p>{{mission.details}}</p> 
+</div>
 
 
 <router-outlet></router-outlet>

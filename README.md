@@ -2,6 +2,9 @@
 
 An app that uses GraphQL to elaborate SpaceX APIs.
 
+## Hosting
+💵💷💴 It's free hosting in the end, hit the link a couple of times if the app is sleeping. 🌖⭐💤
+
 ## Space X
 > https://docs.spacexdata.com/
  
