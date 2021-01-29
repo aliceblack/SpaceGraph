@@ -15,12 +15,14 @@ export class AppComponent {
     this.setMissions();
   }
 
+  error=false;
   missions;
   setMissions(){
+    this.error=false;
     this.getMissions()
     .toPromise()
     .then(missions=>{this.missions=missions})
-    .catch(error=>{console.log(error)});
+    .catch(error=>{console.log(error); this.error=true;});
   }
 
   getMissions(){
